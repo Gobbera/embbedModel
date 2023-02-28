@@ -39,7 +39,7 @@ main {
 }
 
 .button-div {
-    margin: 15px;
+    margin: 16px;
     width: 30%;
     height: 20%;
     display: flex;
@@ -70,5 +70,9 @@ main {
         height: 74px;
         font-size: 1rem;
         border-radius: 50%;
+    }
+
+    .button-div {
+        margin: 32px;
     }
 }
