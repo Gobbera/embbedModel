@@ -49,6 +49,7 @@ main {
 }
 
 .chat-button {
+    position: fixed;
     width: 220px;
     height: 74px;
     background-color: blueviolet;
