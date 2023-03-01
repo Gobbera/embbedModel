@@ -57,12 +57,27 @@ main {
     border-radius: 64px;
     font-size: 1.5rem;
     color: white;
+    position: inherit;
 }
 
 .chat-button:hover {
     background-color: rgb(174, 125, 217);
 }
 
+
+.embbed-link {
+    position: absolute;
+}
+
+#embbed-chat {
+    margin-left: 56%;
+    position: absolute;
+}
+
+.close-button {
+    height: 10px;
+    position: relative;
+}
 
 @media (max-width: 600px) {
     .chat-button {
@@ -72,7 +87,7 @@ main {
         border-radius: 50%;
     }
 
-    .button-div {
+    .button-div{
         margin: 32px;
     }
 }
