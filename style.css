@@ -6,17 +6,17 @@ header {
     background-color: #e7e7e7e7;
     box-shadow: 0px -8px 15px 8px rgba(0,0,0,0.44);  
     height: 14vh;
-    width: 100%;
+    width: 100vw;
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     height: 85vh;
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: 1vh;
 }
 
@@ -71,7 +71,7 @@ main {
 #embbed-chat {
     width: 450px;
     height: 700px;
-    margin: 1% 1% 1% 70%;
+    margin: 1% 1% 0 70%;
     position: absolute;
 }
 
@@ -105,6 +105,22 @@ main {
 
     .button-div{
         margin: 32px;
+    }
+
+    #embbed-chat {
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        position: absolute;
+    }
+    .main-content {
+        padding: 15px;
+        height: 80%;
+        width: 100%;
+    }
+
+    #close-button {
+        margin: 1% 1% 1% auto;
     }
 }
 
