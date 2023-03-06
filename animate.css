@@ -68,13 +68,15 @@ footer {
 }
 
 .box {
+    background-color: white;
     position: fixed;
-    height: 440px;
-    bottom: 170px;
+    height: 470px;
+    bottom: 120px;
     right: 38px;
     align-self: center;
     max-width: 400px;
     width: 100%;
+    box-shadow: 0 -1px 12px 0 rgb(0 0 0 / 40%);
 }
 
 
