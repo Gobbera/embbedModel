@@ -19,16 +19,28 @@ header {
 }
 
 main {
-    justify-content: flex-end;
+    justify-content: center;
     display: flex;
     width: 100vw;
     box-sizing: border-box;
     height: 85vh;
 }
 
+.main-content {
+}
+
 footer {
     width: 100vw;
     height: 1vh;
+}
+/* embbed-chat CSS configuration */
+:root {
+    --primary-color: #00a089;
+    --secondary-color: #d4c161;
+    --tertiary-color: #C6E7F4;
+    --fourth-color: #efefef;
+    --font-color: #555555;
+    --icon-color: rgb(62, 61, 61);
 }
 
 @keyframes slideOnOpenBox {
@@ -49,16 +61,23 @@ footer {
 }
 .top-chat-bar {
     height: 53px;
-    background-color: blueviolet;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
-
 
 .box {
-    margin-right: 2%;
+    position: fixed;
+    height: 440px;
+    bottom: 170px;
+    right: 38px;
     align-self: center;
-    width: 40%;
-    height: 80%;
+    max-width: 400px;
+    width: 100%;
 }
+
+
 .openBox {
     animation: slideOnOpenBox 1s;
 }
@@ -67,37 +86,18 @@ footer {
     animation: slideOnCloseBox 1s;
 }
 
-.button-div {
-    margin: 16px;
-    width: 30%;
-    height: 20%;
+#chat-icon {
+    transform: scaleX(-1);
+    width: 60%; 
+    height: 60%; 
+    filter: invert(1);
+}
+
+.rouded-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: end;
-    position: absolute;
-}
-
-.chat-button {
-    position: fixed;
-    width: 220px;
-    height: 74px;
-    background-color: blueviolet;
-    border: none;
-    border-radius: 64px;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.chat-button:hover {
-    background-color: rgb(174, 125, 217);
-}
-.chat-button:active {
-    background-color: rgb(199, 199, 199);
-}
-
-#close-button {
-    background-color: blueviolet;
+    background-color: transparent;
     font-size: 14px;
     font-weight: 700;
     border: none;
@@ -107,9 +107,23 @@ footer {
     border-radius: 50%;
 }
 
-#close-button:hover {
-    background-color: rgb(174, 125, 217);
+.rouded-button:hover {
+    background-color: #37b9a5;
 }
-#close-button:active {
+
+.rouded-button:active {
     background-color: rgb(199, 199, 199);
 }
+
+.chat-button {
+    position: fixed;
+    bottom: 25px;
+    right: 32px;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border: 1px solid var(--tertiary-color);
+    color: white;
+}
+
+/* embbed-chat CSS configuration */
