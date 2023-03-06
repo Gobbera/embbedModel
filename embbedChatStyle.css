@@ -4,43 +4,27 @@
 }
 
 body {
-
 }
 
 header {
     background-color: #e7e7e7e7;
     box-shadow: 0px -8px 15px 8px rgba(0,0,0,0.44);  
-    height: 14vh;
-    width: 100vw;
-}
-
-.top-bar {
-    padding: 15px;
+    height: 10vh;
 }
 
 main {
     justify-content: center;
     display: flex;
-    width: 100vw;
     box-sizing: border-box;
-    height: 85vh;
 }
 
-.main-content {
+footer{
 }
 
-footer {
-    width: 100vw;
-    height: 1vh;
-}
 /* embbed-chat CSS configuration */
 :root {
     --primary-color: #00a089;
-    --secondary-color: #d4c161;
-    --tertiary-color: #C6E7F4;
-    --fourth-color: #efefef;
-    --font-color: #555555;
-    --icon-color: rgb(62, 61, 61);
+    --embbed-container-border-radius: 8px;
 }
 
 @keyframes slideOnOpenBox {
@@ -51,6 +35,7 @@ footer {
         transform: translateX(0);
     }
 }
+
 @keyframes slideOnCloseBox {
     from {
         transform: translateX(0);
@@ -59,12 +44,15 @@ footer {
         transform: translateX(600px);
     }
 }
+
 .top-chat-bar {
     height: 53px;
     background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: end;
+    border-radius: var(--embbed-container-border-radius) 
+                   var(--embbed-container-border-radius) 0 0;
 }
 
 .box {
@@ -77,8 +65,8 @@ footer {
     max-width: 400px;
     width: 100%;
     box-shadow: 0 -1px 12px 0 rgb(0 0 0 / 40%);
+    border-radius: var(--embbed-container-border-radius);
 }
-
 
 .openBox {
     animation: slideOnOpenBox 1s;
@@ -88,7 +76,7 @@ footer {
     animation: slideOnCloseBox 1s;
 }
 
-#chat-icon {
+#embbed-icons {
     transform: scaleX(-1);
     width: 60%; 
     height: 60%; 
@@ -124,8 +112,6 @@ footer {
     width: 60px;
     height: 60px;
     background: var(--primary-color);
-    border: 1px solid var(--tertiary-color);
     color: white;
 }
-
 /* embbed-chat CSS configuration */
